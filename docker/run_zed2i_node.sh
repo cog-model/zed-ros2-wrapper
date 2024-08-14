@@ -1,6 +1,7 @@
-docker run -it \
+docker run -it --rm \
     --runtime nvidia \
     --privileged \
+    --name zed2i_camera_node_ros2 \
     --ipc=host \
     --pid=host \
     -e NVIDIA_DRIVER_CAPABILITIES=all \
