@@ -10,4 +10,4 @@ docker run -it --rm \
     -v /tmp/.X11-unix/:/tmp/.X11-unix \
     -v ${HOME}/zed_docker_ai/:/usr/local/zed/resources/ \
     zed_ros2_desktop_image:latest \
-    ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i
+    ros2 launch zed_wrapper zed_multi_camera.launch.py cam_names:='[cam1,cam2]' cam_models:='[zed2i,zed2i]' cam_serials:='[33890767,30006989]'
